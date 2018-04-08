@@ -9,3 +9,9 @@
 
 # rspec failure tracking
 .rspec_status
+
+## MAC OS
+.DS_Store
+
+## VIM
+*.swp
