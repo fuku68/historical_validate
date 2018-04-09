@@ -1,2 +1,4 @@
 en:
-  historical_validate:
+  errors:
+    messages:
+      included_historical_password: The password used within the last %{num} times can not be used.

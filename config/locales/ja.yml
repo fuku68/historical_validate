@@ -1,2 +1,4 @@
 ja:
-  historical_validate:
+  errors:
+    messages:
+      included_historical_password: 直近%{num}回のうちに使用したパスワードは利用できません.
