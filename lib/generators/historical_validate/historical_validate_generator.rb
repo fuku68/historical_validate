@@ -1,7 +1,8 @@
 module HistoricalValidate
   module Generators
+    # HistoricalValidateGenerator
     class HistoricalValidateGenerator < Rails::Generators::NamedBase
-      namespace "historical_validate"
+      namespace 'historical_validate'
 
       def inject_devise_invitable_content
         # path = File.join("app", "models", "#{file_path}.rb")
