@@ -1,5 +1,6 @@
-require "historical_validate/version"
+require 'historical_validate/version'
 
+# HistoricalValidate
 module HistoricalValidate
   autoload :Configuration, 'historical_validate/configuration'
   autoload :Models, 'historical_validate/models'

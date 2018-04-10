@@ -1,0 +1,16 @@
+AllCops:
+  Exclude:
+    - Rakefile
+    - historical_validate.gemspec
+    - bin/*
+    - lib/generators/active_record/templates/migration.rb
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 60
+
+Metrics/AbcSize:
+  Max: 20
+
