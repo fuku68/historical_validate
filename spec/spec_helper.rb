@@ -1,5 +1,9 @@
+# require "rails/all"
+require "action_controller/railtie"
 require 'bundler/setup'
 require 'historical_validate'
+require 'rspec/rails'
+require 'ammeter/init'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
