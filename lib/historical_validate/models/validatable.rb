@@ -32,6 +32,7 @@ module HistoricalValidate
                     else
                       []
                     end
+        histories = histories.slice(0, HistoricalValidate.config.generation_num)
         return unless histories.include?(Digest::MD5.hexdigest(password))
         errors.add :password, :included_historical_password, num: HistoricalValidate.config.generation_num
       end
