@@ -1,5 +1,4 @@
-# require "rails/all"
-require "action_controller/railtie"
+require "rails/all"
 require 'bundler/setup'
 require 'historical_validate'
 require 'rspec/rails'
@@ -15,4 +14,8 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+
+  ActiveRecord::Base.establish_connection adapter: "sqlite3", database: ":memory:"
+  load File.dirname(__FILE__) + '/schema.rb'
+  require File.dirname(__FILE__) + '/models/user.rb'
 end
